@@ -6,12 +6,15 @@
 //
 
 import Foundation
+import UIKit
 
 class NetworkManager {
     static let shared = NetworkManager()
     
-    let baseUrl: String = "https://api.github.com/users/"
-    let followersPerPage: Int = 100
+    private let baseUrl: String = "https://api.github.com/users/"
+    private let followersPerPage: Int = 100
+    
+    let cache = NSCache<NSString, UIImage>()
     
     private init() {}
     

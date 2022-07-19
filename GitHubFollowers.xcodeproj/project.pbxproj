@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1EEB07288609DD002A9DFA /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1EEB06288609DD002A9DFA /* UIHelper.swift */; };
 		DD8A755F288208E400A8ED7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A755E288208E400A8ED7A /* AppDelegate.swift */; };
 		DD8A7561288208E400A8ED7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A7560288208E400A8ED7A /* SceneDelegate.swift */; };
 		DD8A7568288208E600A8ED7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8A7567288208E600A8ED7A /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD1EEB06288609DD002A9DFA /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		DD8A755B288208E400A8ED7A /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8A755E288208E400A8ED7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8A7560288208E400A8ED7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,8 +91,6 @@
 				DD8A758528836F7200A8ED7A /* Custom Views */,
 				DD8A758628836F9800A8ED7A /* Extension */,
 				DD8A75892883700600A8ED7A /* Support */,
-				DD8A7567288208E600A8ED7A /* Assets.xcassets */,
-				DD8A7569288208E600A8ED7A /* LaunchScreen.storyboard */,
 				DD8A756C288208E600A8ED7A /* Info.plist */,
 			);
 			path = GitHubFollowers;
@@ -148,6 +148,8 @@
 			children = (
 				DD8A755E288208E400A8ED7A /* AppDelegate.swift */,
 				DD8A7560288208E400A8ED7A /* SceneDelegate.swift */,
+				DD8A7567288208E600A8ED7A /* Assets.xcassets */,
+				DD8A7569288208E600A8ED7A /* LaunchScreen.storyboard */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				DD8A759328843A7D00A8ED7A /* GFError.swift */,
+				DD1EEB06288609DD002A9DFA /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				DD8A75752882214E00A8ED7A /* FavoritesListVC.swift in Sources */,
 				DD8A75772883187300A8ED7A /* GFButton.swift in Sources */,
 				DD8A758328836C1400A8ED7A /* UIViewController+Ext.swift in Sources */,
+				DD1EEB07288609DD002A9DFA /* UIHelper.swift in Sources */,
 				DD8A75992884491C00A8ED7A /* GFAvatarImageView.swift in Sources */,
 				DD8A75732882210200A8ED7A /* SearchVC.swift in Sources */,
 				DD8A75812883659D00A8ED7A /* GFAlertVC.swift in Sources */,
