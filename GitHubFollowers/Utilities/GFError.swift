@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GitHubFollowers
 //
-//  Created by Ali Yasin Eser on 17.07.2022.
+//  Created by Ali Yasin Eser on 20.07.2022.
 //
 
 import Foundation
@@ -13,3 +13,4 @@ enum GFError: String, Error {
     case invalidResponse = "Invalid response from the server. Please try again."
     case invalidData = "The data received from the server was invalid. Please try again."
 }
+
