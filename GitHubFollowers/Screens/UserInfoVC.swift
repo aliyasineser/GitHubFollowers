@@ -62,7 +62,6 @@ class UserInfoVC: UIViewController {
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissTheView))
         navigationController?.navigationBar.backgroundColor = .secondarySystemBackground
         navigationItem.rightBarButtonItem = doneButton
-        navigationItem.title = username
     }
     
     func layoutUI() {
