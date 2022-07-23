@@ -21,6 +21,7 @@ class UserInfoVC: UIViewController {
     let dateLabel = GFBodyLabel(textAlignment: .center)
     var itemViews: [UIView] = []
     
+    weak var delegate: FollowerVCDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,8 +124,12 @@ extension UserInfoVC: UserInfoVCDelegate {
     }
     
     func didTapGetFollowers(for user: User) {
-        // Dismiss Controller
-        // Tell Follower List Screen The New UserI
+        guard user.followers != 0 else {
+            presentGFAlertOnMainThread(title: "No followers", message: "This user has no followers, what a shame 🥺", buttonTitle: "So sad")
+            return
+        }
+        delegate.didRequestFollowers(for: user.login)
+        dismiss(animated: true)
     }
     
     
