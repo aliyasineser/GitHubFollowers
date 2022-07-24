@@ -11,7 +11,7 @@ protocol FollowerVCDelegate: AnyObject {
     func didRequestFollowers(for username: String)
 }
 
-class FollowerListVC: UIViewController {
+class FollowerListVC: GFDataLoadingVC {
 
     var followers: [Follower] = []
     var filteredFollowers: [Follower] = []
