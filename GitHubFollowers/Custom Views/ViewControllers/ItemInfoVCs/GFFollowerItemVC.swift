@@ -7,13 +7,20 @@
 
 import UIKit
 
+protocol GFFollowerItemVCDelegate: AnyObject {
+    func didTapGetFollowers(for user: User)
+}
+
 class GFFollowerItemVC: GFItemInfoVC {
  
     var user: User!
     
-    init(for user: User) {
+    weak var delegate: GFFollowerItemVCDelegate!
+    
+    init(for user: User, delegate: GFFollowerItemVCDelegate) {
         super.init(nibName: nil, bundle: nil)
         self.user = user
+        self.delegate = delegate
     }
     
     required init?(coder: NSCoder) {

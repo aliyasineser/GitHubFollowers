@@ -27,6 +27,7 @@ class GFBodyLabel: UILabel {
         textColor = .secondaryLabel
         numberOfLines = 3
         font = UIFont.preferredFont(forTextStyle: .body)
+        adjustsFontForContentSizeCategory = true
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.75
         lineBreakMode = .byWordWrapping

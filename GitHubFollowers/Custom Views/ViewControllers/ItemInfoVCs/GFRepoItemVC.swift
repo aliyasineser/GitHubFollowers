@@ -7,13 +7,20 @@
 
 import UIKit
 
+protocol GFRepoItemVCDelegate: AnyObject {
+    func didTapGithubProfiler(for user: User)
+}
+
 class GFRepoItemVC: GFItemInfoVC {
  
     var user: User!
     
-    init(for user: User) {
+    weak var delegate: GFRepoItemVCDelegate!
+    
+    init(for user: User, delegate: GFRepoItemVCDelegate) {
         super.init(nibName: nil, bundle: nil)
         self.user = user
+        self.delegate = delegate
     }
     
     required init?(coder: NSCoder) {

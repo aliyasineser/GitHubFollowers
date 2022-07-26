@@ -36,12 +36,12 @@ class GFUserInfoHeaderVC: UIViewController {
     }
     
     func addSubview() {
-        [avatarImageView,
-        usernameLabel,
-        nameLabel,
-        locationImageView,
-        locationLabel,
-         bioLabel].forEach{ view.addSubview($0) }
+        view.addSubviews(avatarImageView,
+                        usernameLabel,
+                        nameLabel,
+                        locationImageView,
+                        locationLabel,
+                        bioLabel)
     }
     
     func downloadAvatarImage() {
@@ -96,7 +96,7 @@ class GFUserInfoHeaderVC: UIViewController {
             bioLabel.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: textImagePadding),
             bioLabel.leadingAnchor.constraint(equalTo: avatarImageView.leadingAnchor),
             bioLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bioLabel.heightAnchor.constraint(equalToConstant: 60)
+            bioLabel.heightAnchor.constraint(equalToConstant: 90)
         ])
         
         
