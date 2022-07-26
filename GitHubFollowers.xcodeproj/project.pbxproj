@@ -25,6 +25,7 @@
 		DD1EEB30288E0433002A9DFA /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1EEB2F288E0433002A9DFA /* GFDataLoadingVC.swift */; };
 		DD1EEB33288F423A002A9DFA /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1EEB32288F423A002A9DFA /* GFTabBarController.swift */; };
 		DD1EEB3528906A1B002A9DFA /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1EEB3428906A1B002A9DFA /* UIView+Ext.swift */; };
+		DD1EEB3728907B48002A9DFA /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1EEB3628907B48002A9DFA /* UITableView+Ext.swift */; };
 		DD8A755F288208E400A8ED7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A755E288208E400A8ED7A /* AppDelegate.swift */; };
 		DD8A7561288208E400A8ED7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8A7560288208E400A8ED7A /* SceneDelegate.swift */; };
 		DD8A7568288208E600A8ED7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8A7567288208E600A8ED7A /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		DD1EEB2F288E0433002A9DFA /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
 		DD1EEB32288F423A002A9DFA /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		DD1EEB3428906A1B002A9DFA /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		DD1EEB3628907B48002A9DFA /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		DD8A755B288208E400A8ED7A /* GitHubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8A755E288208E400A8ED7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8A7560288208E400A8ED7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				DD8A758228836C1400A8ED7A /* UIViewController+Ext.swift */,
 				DD1EEB25288AE9F7002A9DFA /* Date+Ext.swift */,
 				DD1EEB3428906A1B002A9DFA /* UIView+Ext.swift */,
+				DD1EEB3628907B48002A9DFA /* UITableView+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				DD8A755F288208E400A8ED7A /* AppDelegate.swift in Sources */,
 				DD8A7561288208E400A8ED7A /* SceneDelegate.swift in Sources */,
 				DD1EEB21288A124B002A9DFA /* GFRepoItemVC.swift in Sources */,
+				DD1EEB3728907B48002A9DFA /* UITableView+Ext.swift in Sources */,
 				DD1EEB1128889716002A9DFA /* UserInfoVC.swift in Sources */,
 				DD1EEB33288F423A002A9DFA /* GFTabBarController.swift in Sources */,
 			);
