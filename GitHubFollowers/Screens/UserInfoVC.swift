@@ -52,7 +52,7 @@ class UserInfoVC: UIViewController {
             case .success(let user):
                 DispatchQueue.main.async { self.configureUIElements(with: user) }
             case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+                self.presentGFAlert(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }
@@ -122,7 +122,7 @@ class UserInfoVC: UIViewController {
 extension UserInfoVC: GFFollowerItemVCDelegate {
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
-            presentGFAlertOnMainThread(title: "No followers", message: "This user has no followers, what a shame 🥺", buttonTitle: "So sad")
+            presentGFAlert(title: "No followers", message: "This user has no followers, what a shame 🥺", buttonTitle: "So sad")
             return
         }
         delegate.didRequestFollowers(for: user.login)
@@ -135,7 +135,7 @@ extension UserInfoVC: GFRepoItemVCDelegate {
     func didTapGithubProfiler(for user: User) {
         // Show Safari View Controller
         guard let url = URL(string: user.htmlUrl) else {
-            presentGFAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user is invalid", buttonTitle: "Ok")
+            presentGFAlert(title: "Invalid URL", message: "The url attached to this user is invalid", buttonTitle: "Ok")
             return
         }
         presentSafariVCWithUrl(url: url)
