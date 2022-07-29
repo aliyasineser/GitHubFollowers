@@ -14,6 +14,8 @@ class FollowerListVC: GFDataLoadingVC {
     
     enum Section { case main }
     
+    let searchController = UISearchController()
+    
     var username: String!
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
@@ -56,7 +58,6 @@ class FollowerListVC: GFDataLoadingVC {
     }
     
     func configureSearchdController() {
-        let searchController = UISearchController()
         searchController.searchResultsUpdater = self
         searchController.searchBar.placeholder = "Search for a username"
         searchController.obscuresBackgroundDuringPresentation = false
@@ -204,11 +205,11 @@ extension FollowerListVC: UserInfoVCDelegate {
     func didRequestFollowers(for username: String) {
         self.username = username
         title = username
+        searchController.searchBar.text?.removeAll()
         pageCounter = 1
         followers.removeAll()
         filteredFollowers.removeAll()
         collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
         getFollowers(username: username, page: pageCounter)
-        updateData(on: followers)
     }
 }
