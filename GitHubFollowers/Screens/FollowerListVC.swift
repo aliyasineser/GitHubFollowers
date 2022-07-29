@@ -206,6 +206,7 @@ extension FollowerListVC: UserInfoVCDelegate {
         self.username = username
         title = username
         searchController.searchBar.text?.removeAll()
+        searchController.isActive = false
         pageCounter = 1
         followers.removeAll()
         filteredFollowers.removeAll()
